@@ -16,6 +16,7 @@
 		2268C62923E7A7EC0025B7EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2268C62823E7A7EC0025B7EC /* Assets.xcassets */; };
 		2268C62C23E7A7EC0025B7EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2268C62A23E7A7EC0025B7EC /* LaunchScreen.storyboard */; };
 		2268C63423E7B1380025B7EC /* SushiPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2268C63323E7B1380025B7EC /* SushiPiece.swift */; };
+		2268C63623E7D0F90025B7EC /* assets.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 2268C63523E7D0F90025B7EC /* assets.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2268C62B23E7A7EC0025B7EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2268C62D23E7A7EC0025B7EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2268C63323E7B1380025B7EC /* SushiPiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiPiece.swift; sourceTree = "<group>"; };
+		2268C63523E7D0F90025B7EC /* assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = assets.atlas; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				2268C63323E7B1380025B7EC /* SushiPiece.swift */,
 				2268C62323E7A7EB0025B7EC /* GameViewController.swift */,
 				2268C62523E7A7EB0025B7EC /* Main.storyboard */,
+				2268C63523E7D0F90025B7EC /* assets.atlas */,
 				2268C62823E7A7EC0025B7EC /* Assets.xcassets */,
 				2268C62A23E7A7EC0025B7EC /* LaunchScreen.storyboard */,
 				2268C62D23E7A7EC0025B7EC /* Info.plist */,
@@ -136,6 +139,7 @@
 			files = (
 				2268C62723E7A7EB0025B7EC /* Main.storyboard in Resources */,
 				2268C61E23E7A7EB0025B7EC /* GameScene.sks in Resources */,
+				2268C63623E7D0F90025B7EC /* assets.atlas in Resources */,
 				2268C62923E7A7EC0025B7EC /* Assets.xcassets in Resources */,
 				2268C62C23E7A7EC0025B7EC /* LaunchScreen.storyboard in Resources */,
 				2268C62023E7A7EB0025B7EC /* Actions.sks in Resources */,
