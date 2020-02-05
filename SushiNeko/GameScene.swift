@@ -9,6 +9,21 @@ enum Side {
     case left, right, none
 }
 class GameScene: SKScene{
+    var health: CGFloat = 1.0 {
+      didSet {
+            /* Cap Health */
+            if health > 1.0 { health = 1.0 }
+          /* Scale health bar between 0.0 -> 1.0 e.g 0 -> 100% */
+          healthBar.xScale = health
+      }
+    }
+    
+    var score: Int = 0 {
+      didSet {
+        scoreLabel.text = String(score)
+      }
+    }
+    
     /* Game objects */
     var sushiBasePiece: SushiPiece!
     /* Cat Character */
@@ -20,8 +35,22 @@ class GameScene: SKScene{
     
     var playButton: MSButtonNode!
     
+    var healthBar: SKSpriteNode!
+    
+    var scoreLabel: SKLabelNode!
+    
+
     func moveTowerDown() { var n: CGFloat = 0; for piece in sushiTower { let y = (n * 55) + 215; piece.position.y -= (piece.position.y - y) * 0.5; n += 1 } }
     override func update(_ currentTime: TimeInterval) {
+        /* Called before each frame is rendered */
+        if state != .playing { return }
+
+        /* Decrease Health */
+        health -= 0.01
+        /* Has the player ran out of health? */
+        if health < 0 {
+            gameOver()
+        }
         moveTowerDown()
     }
     func gameOver() {
@@ -94,6 +123,11 @@ class GameScene: SKScene{
             /* Add a new sushi piece to the top of the sushi tower */
             addRandomPieces(total: 1)
         }
+        /* Increment Health */
+        health += 0.1
+        
+        /* Increment Score */
+        score += 1
 
     }
 
@@ -122,6 +156,9 @@ class GameScene: SKScene{
             self.state = .ready
         }
         
+        healthBar = childNode(withName: "healthBar") as! SKSpriteNode
+        
+        scoreLabel = childNode(withName: "scoreLabel") as! SKLabelNode
     }
     
     
