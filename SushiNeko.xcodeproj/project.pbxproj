@@ -20,6 +20,7 @@
 		2268C63823E7D2B60025B7EC /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2268C63723E7D2B60025B7EC /* Character.swift */; };
 		2268C63C23E8F7E70025B7EC /* AnimationActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2268C63B23E8F7E70025B7EC /* AnimationActions.sks */; };
 		2268C63F23EA44B30025B7EC /* SFX in Resources */ = {isa = PBXBuildFile; fileRef = 2268C63E23EA44B30025B7EC /* SFX */; };
+		2268C64123EA4AB10025B7EC /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2268C64023EA4AB10025B7EC /* MSButtonNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		2268C63723E7D2B60025B7EC /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		2268C63B23E8F7E70025B7EC /* AnimationActions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = AnimationActions.sks; path = ../AnimationActions.sks; sourceTree = "<group>"; };
 		2268C63E23EA44B30025B7EC /* SFX */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SFX; sourceTree = "<group>"; };
+		2268C64023EA4AB10025B7EC /* MSButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			children = (
 				2268C63E23EA44B30025B7EC /* SFX */,
 				2268C63B23E8F7E70025B7EC /* AnimationActions.sks */,
+				2268C64023EA4AB10025B7EC /* MSButtonNode.swift */,
 				2268C61B23E7A7EB0025B7EC /* AppDelegate.swift */,
 				2268C61D23E7A7EB0025B7EC /* GameScene.sks */,
 				2268C61F23E7A7EB0025B7EC /* Actions.sks */,
@@ -167,6 +170,7 @@
 				2268C63823E7D2B60025B7EC /* Character.swift in Sources */,
 				2268C62223E7A7EB0025B7EC /* GameScene.swift in Sources */,
 				2268C63423E7B1380025B7EC /* SushiPiece.swift in Sources */,
+				2268C64123EA4AB10025B7EC /* MSButtonNode.swift in Sources */,
 				2268C62423E7A7EB0025B7EC /* GameViewController.swift in Sources */,
 				2268C61C23E7A7EB0025B7EC /* AppDelegate.swift in Sources */,
 			);
