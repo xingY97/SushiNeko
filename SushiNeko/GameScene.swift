@@ -124,7 +124,7 @@ class GameScene: SKScene{
             addRandomPieces(total: 1)
         }
         /* Increment Health */
-        health += 0.1
+        health += 0.15
         
         /* Increment Score */
         score += 1
